@@ -3,13 +3,17 @@ package com.melihkaratas.parayakala;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.TimedText;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.os.Process;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,7 +22,9 @@ import android.media.MediaPlayer;
 import java.util.Random;
 
 
+
     public class MainActivity extends AppCompatActivity {
+
         TextView scoreText;
         TextView timeText;
         int score;
@@ -36,10 +42,13 @@ import java.util.Random;
         Runnable runnable;
 
 
+        @SuppressLint("MissingInflatedId")
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+
+
 
 
             timeText = (TextView) findViewById(R.id.timeText);
@@ -79,7 +88,7 @@ import java.util.Random;
                     alert.setTitle("Tekrar Başla");
                     alert.setIcon(R.drawable.res);
                     alert.setMessage("Oyuna Hazır Mısın");
-                    alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    alert.setPositiveButton("Evet", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
@@ -88,10 +97,10 @@ import java.util.Random;
                             startActivity(intent);
                         }
                     });
-                    alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    alert.setNegativeButton("Hayır", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            android.os.Process.killProcess(android.os.Process.myPid());
+                            Process.killProcess(Process.myPid());
                             MainActivity.super.onDestroy();
 
 
@@ -101,6 +110,12 @@ import java.util.Random;
                 }
             }.start();
         }
+
+
+
+
+
+
 
         public void pointsScore(View view) {
 
@@ -129,8 +144,10 @@ import java.util.Random;
 
             handler.post(runnable);
         }
-    }
 
+
+
+    }
 
 
 
