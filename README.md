@@ -1,4 +1,4 @@
-# Atil-Samancioglu-Udemy-Education-Clone-Catch-The-Kenny-Projec
+# Atil-Samancioglu-Udemy-Education-Clone-CatchTheKenny-Project
 Udemy Atıl Samancıoğlu Android Mobil Uygulama kursu kopya çalışması <br>
 
 Udemy platformunda eğitim videoları olan Atıl Samancıoğlu Android Mobil uygulama kursunda yaptığı oyunun klon versiyonu. <br>
@@ -8,5 +8,4 @@ Udemy platformunda eğitim videoları olan Atıl Samancıoğlu Android Mobil uyg
 [Udemy Kurs Link] --> https://www.udemy.com/course/android-o-mobil-uygulama-dersi-kotlin-java/ <br>
 
 
-![parayakala2](https://user-images.githubusercontent.com/89781470/229339597-3d43fc59-3cb1-4e1f-961e-f8793a701440.JPG) <br>
-![parayakala](https://user-images.githubusercontent.com/89781470/229339599-86103c6b-eedb-4edf-86df-4aba68728764.JPG) <br>
+![parayakala](https://user-images.githubusercontent.com/89781470/229356441-72dc298e-e67e-4c07-9194-dba02deeaeb7.JPG)
