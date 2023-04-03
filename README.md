@@ -8,4 +8,3 @@ Udemy platformunda eğitim videoları olan Atıl Samancıoğlu Android Mobil uyg
 [Udemy Kurs Link] --> https://www.udemy.com/course/android-o-mobil-uygulama-dersi-kotlin-java/ <br>
 
 
-![parayakala](https://user-images.githubusercontent.com/89781470/229356441-72dc298e-e67e-4c07-9194-dba02deeaeb7.JPG)
