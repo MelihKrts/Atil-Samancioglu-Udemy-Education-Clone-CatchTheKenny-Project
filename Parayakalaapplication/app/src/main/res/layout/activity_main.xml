@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/play"
+            android:padding="15dp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="354dp"
+            android:layout_height="78dp"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:text="Bilgilendirme"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="309dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/alata"
+            android:text="1) Amaç oyunda para resmine basıp puan arttırmak"
+            android:textColor="@color/white"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:fontFamily="@font/alata"
+            android:text="2) Her dokunuş 1 puan olarak artacak"
+            android:textColor="@color/white"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="@font/alata"
+            android:text="3) Oyunun sesini yukarıdaki düğme ile kapatabilirsiniz."
+            android:textColor="@color/white"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:fontFamily="@font/alata"
+            android:text="4) Oyuna hazırsanız başla tuşuna basınız. İyi Oyunlar"
+            android:textColor="@color/white"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:fontFamily="@font/alata"
+            android:text="5)Süreniz 30 saniyedir."
+            android:textColor="@color/white"
+            app:layout_column="0"
+            app:layout_row="6" />
+
+        <Button
+            android:id="@+id/btnBasla"
+            android:layout_width="277dp"
+            android:layout_height="65dp"
+            android:text="Oyuna Başla"
+            app:layout_column="0"
+            app:layout_row="7" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
